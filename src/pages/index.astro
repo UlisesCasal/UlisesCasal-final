@@ -1,34 +1,47 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import NavBar from '../components/NavBar.astro';
-import SobreMi from '../components/SobreMi.astro';
-import Background from '../components/Background.astro';
-import Habilidades from '../components/Habilidades.astro';
-import Experiencia from '../components/Experiencia.astro';
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/NavBar.astro";
+import SobreMi from "../components/SobreMi.astro";
+import Background from "../components/Background.astro";
+import Habilidades from "../components/Habilidades.astro";
+import Experiencia from "../components/Experiencia.astro";
+import Proyectos from "../components/Proyectos.astro";
+import Contacto from "../components/Contacto.astro";
 ---
 
 <Layout title="Ulises Casal">
 	<main>
-		<Background></Background>
-		<NavBar></NavBar>
-		<SobreMi></SobreMi>
-		<Habilidades></Habilidades>
-		<Experiencia></Experiencia>
-		
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<head>
+			<link rel="icon" href="src/Multimedia/uimg.png" type="image/png">
+		</head>
+		<Background />
+		<NavBar />
+		<SobreMi />
+		<Habilidades />
+		<Experiencia />
+		<Proyectos/>
+		<Contacto/>
 	</main>
 </Layout>
 
 <style>
+	html {
+    scroll-behavior: smooth;
+}
 	main {
 		margin: auto;
 		padding: 1rem;
 		width: 68%;
 		max-width: calc(100% - 2rem);
 		color: white;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 1.6;
-		font-family: 'Onest Variable', sans-serif;
+		font-family: "Onest";
 	}
-
-
 </style>
