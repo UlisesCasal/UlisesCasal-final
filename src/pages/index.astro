@@ -1,5 +1,4 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import SobreMi from "../components/SobreMi.astro";
 import Background from "../components/Background.astro";
@@ -9,31 +8,34 @@ import Proyectos from "../components/Proyectos.astro";
 import Contacto from "../components/Contacto.astro";
 ---
 
-<Layout title="Ulises Casal">
-	<main>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<head>
-			<link rel="icon" href="src/Multimedia/uimg.png" type="image/png">
-		</head>
-		<Background />
-		<NavBar />
-		<SobreMi />
-		<Habilidades />
-		<Experiencia />
-		<Proyectos/>
-		<Contacto/>
-	</main>
-</Layout>
+<html>
+<head>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+	<!-- Aquí va el favicon -->
+	<link rel="icon" href="src/uimg.png" type="image/png" />
+	<title>Ulises Casal</title>
+</head>
+<body>
+	
+		<main>
+			<Background />
+			<NavBar />
+			<SobreMi />
+			<Habilidades />
+			<Experiencia />
+			<Proyectos/>
+			<Contacto/>
+		</main>
+</body>
+</html>
 
 <style>
 	html {
-    scroll-behavior: smooth;
-}
+		scroll-behavior: smooth;
+	}
 	main {
 		margin: auto;
 		padding: 1rem;
