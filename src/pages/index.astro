@@ -11,24 +11,25 @@ import Contacto from "../components/Contacto.astro";
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegúrate de incluir esta línea para hacer tu sitio web responsive -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
-	<!-- Aquí va el favicon -->
-	<link rel="icon" href="../uimg.png" type="image/png" />
+	<link rel="icon" href="/usvg.svg" type="image/svg+xml" />
+
 	<title>Ulises Casal</title>
 </head>
 <body>
 	
-		<main>
-			<Background />
-			<NavBar />
-			<SobreMi />
-			<Habilidades />
-			<Experiencia />
-			<Proyectos/>
-			<Contacto/>
-		</main>
+	<main>
+		<Background />
+		<NavBar />
+		<SobreMi />
+		<Habilidades />
+		<Experiencia />
+		<Proyectos/>
+		<Contacto/>
+	</main>
 </body>
 </html>
 
@@ -45,5 +46,12 @@ import Contacto from "../components/Contacto.astro";
 		font-size: 18px;
 		line-height: 1.6;
 		font-family: "Onest";
+	}
+
+	/* Aquí es donde definimos los estilos específicos para dispositivos con pantallas más pequeñas */
+	@media (max-width: 740px) {
+		main {
+			width: 90%;
+		}
 	}
 </style>
